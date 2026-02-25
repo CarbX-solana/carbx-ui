@@ -123,7 +123,7 @@ export function TokenizePage() {
           {hasPuroAccount ? (
             <div className="rounded-lg border bg-muted/20 p-3 text-sm">
               <p className="m-0 text-muted-foreground">
-                Puro destination account
+                Puro destination account. !!!DO NOT SEND REAL CORCS. ONLY PURO UAT ENV (TEST ENVIRONMENT)!!!
               </p>
               <div className="mt-1 flex items-center gap-1">
                 <p className="m-0 break-all font-medium">{puroAccountNumber}</p>
