@@ -130,7 +130,7 @@ export function OrdersPage() {
                 </p>
                 <p className="m-0">
                   <span className="text-muted-foreground">createdAt:</span>{' '}
-                  {formatDate(selectedOrder.order.createdAt)}
+                  {selectedOrder.order.createdAt ? formatDate(selectedOrder.order.createdAt) : "—"}
                 </p>
                 <p className="m-0">
                   <span className="text-muted-foreground">puroAccountNumber:</span>{' '}
@@ -294,7 +294,9 @@ export function OrdersPage() {
                       {row.order.orderId}
                     </TableCell>
                     <TableCell>{row.order.orderType}</TableCell>
-                    <TableCell>{formatDate(row.order.createdAt)}</TableCell>
+                    <TableCell>
+                     {row.order.createdAt ? formatDate(row.order.createdAt) : "—"}
+                    </TableCell>
                     <TableCell>
                       <span
                         className={[
